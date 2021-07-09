@@ -11,15 +11,26 @@
     <link rel="stylesheet" type="text/css" href="../static/style.css"> 
 </head>
 
-<body>
+<body style="background-color: rgb(164, 188, 231);">
+
+    
+
+    <div class="header_style" style="text-align: center; background-color: ivory;">
+        <h1>Housing Sale Prices Predictions</h1>
+        <p>Enter the given features!</p>
+    </div>
+
+    
     <div class="container">
-        <div class="header_style" style="text-align: center">
-            <h1>Housing Sale Prices Predictions</h1>
-            <p>Enter the given features!</p>
-            <a href="/send">testlink</a>
-        </div>
-        
-            <form method="POST" action="/send" role="form", name="houseform">
+        <nav class="navbar navbar-light bg-light">
+            <form class="container-fluid justify-content-start">
+              <button class="btn btn-outline-success me-2" type="button">Main button</button>
+              <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+            </form>
+          </nav>
+
+
+            <form method="POST" action="/" role="form", name="houseform">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group form_margin">
