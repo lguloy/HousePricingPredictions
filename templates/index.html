@@ -15,22 +15,25 @@
 
     
 
-    <div class="header_style" style="text-align: center; background-color: ivory;">
+    <div class="header_style" style="text-align: center; background-color: rgb(255, 255, 255);">
         <h1>Housing Sale Prices Predictions</h1>
         <p>Enter the given features!</p>
     </div>
 
+    <nav class="navbar navbar-light bg-light rounded-3 border border-2 border-secondary">
+        <form class="container-fluid justify-content-center gap-4" style="margin-bottom: 1px;">
+            <a href="/" class="btn btn-info me-2" role="button">Home</a>
+            <a href="/visualizations" class="btn btn-info me-2" role="button">Testing</a>
+            <a href="/modeling" class="btn btn-info me-2" role="button">Model</a>
+        </form>
+    </nav>
+
     
-    <div class="container">
-        <nav class="navbar navbar-light bg-light">
-            <form class="container-fluid justify-content-start">
-              <button class="btn btn-outline-success me-2" type="button">Main button</button>
-              <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-            </form>
-          </nav>
+    <div class="container border border-2 rounded-3 border-secondary" style="background-color: cadetblue; padding: 20px;">
+        
 
 
-            <form method="POST" action="/" role="form", name="houseform">
+            <form method="POST" action="/" role="form", name="houseform" style="padding-left: 200px ; padding-right: 200px; ">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group form_margin">
@@ -80,22 +83,19 @@
                     </div>
                 </div>
                 
-                <div>
-                <input type="submit" value="Submit" class="btn btn-primary">
+                <div class="d-grid col-6 mx-auto" style="text-align: center; margin-top: 10px;">
+                    <input type="submit" value="Submit" class="btn btn-primary">
                 </div>
 
             </form> 
             
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card" style="margin-top: 50px;">
+        <div class="d-grid col-6 mx-auto" style="text-align: center;">
+                <div class="card" style="margin-top: 10px;">
                     <div class="card-body">
                     <h5 class="card-title">Price Prediction</h5>
-                    
                     <p class="card-text" id="predicted">{{ prices }}</p>   
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 
