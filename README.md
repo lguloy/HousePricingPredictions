@@ -18,7 +18,7 @@ A Random Forest Regression analysis was used to perform the price prediction mod
 
 Top ten feature importance data were selected from the cleaned dataframe and uploaded to AWS posgres database. Data visualization is performed using Tableau and dashboard can be found: https://public.tableau.com/views/HousePricing_Dashboard1/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link 
 
-A web application was created so that users can input house information and run the data through the model to predict a house price. The application requires the same data inputs from the feature importance varriables. As a data collection process, the user imput are stored in separate table of posgres database that has mentioned earlier. The application was deployed using heroku.
+A web application was created so that users can input house information and run the data through the model to predict a house price. The application requires the same data inputs from the feature importance varriables. As a data collection process, the user imput are stored in separate table of posgres database that has mentioned earlier. The application was deployed using heroku and can be found at: https://lghousepredictions.herokuapp.com/
 
 This project was derived from a Kaggle competition: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
 
