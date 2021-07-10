@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>House_Price_Predict</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Dummies_House_Price_Predict</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,13 +14259,13 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/lguloy/House-Pricing-Predictions/blob/Housing_predictions_Clayton/Dummies_House_Price_Predict.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<p><a href="https://colab.research.google.com/github/lguloy/House-Pricing-Predictions/blob/House_Price_ML_CCG/Dummies_House_Price_Predict.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14296,55 +14296,10 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
-Get:2 https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/ InRelease [3,626 B]
-Ign:3 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64  InRelease
-Get:4 http://ppa.launchpad.net/c2d4u.team/c2d4u4.0+/ubuntu bionic InRelease [15.9 kB]
-Hit:5 http://archive.ubuntu.com/ubuntu bionic InRelease
-Get:6 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
-Ign:7 https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64  InRelease
-Get:8 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64  Release [697 B]
-Hit:9 https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64  Release
-Get:10 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64  Release.gpg [836 B]
-Hit:11 http://ppa.launchpad.net/cran/libgit2/ubuntu bionic InRelease
-Get:12 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1,418 kB]
-Get:13 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
-Get:14 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2,221 kB]
-Get:15 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic InRelease [15.9 kB]
-Hit:16 http://ppa.launchpad.net/graphics-drivers/ppa/ubuntu bionic InRelease
-Get:17 http://ppa.launchpad.net/c2d4u.team/c2d4u4.0+/ubuntu bionic/main Sources [1,780 kB]
-Ign:19 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64  Packages
-Get:19 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64  Packages [637 kB]
-Get:20 http://ppa.launchpad.net/c2d4u.team/c2d4u4.0+/ubuntu bionic/main amd64 Packages [910 kB]
-Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [2,188 kB]
-Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2,658 kB]
-Get:23 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic/main amd64 Packages [40.8 kB]
-Fetched 12.1 MB in 4s (3,400 kB/s)
-Reading package lists... Done
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
@@ -14356,18 +14311,18 @@ Reading package lists... Done
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark</span> <span class="kn">import</span> <span class="n">SparkFiles</span>
 <span class="c1"># Load in train.csv from S3 into a DataFrame</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://finalprojectbootcamp.s3.us-east-2.amazonaws.com/test_converted_df.csv&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://finalprojectbootcamp.s3.us-east-2.amazonaws.com/all_dumimies_converted_df.csv&quot;</span>
 <span class="n">spark</span><span class="o">.</span><span class="n">sparkContext</span><span class="o">.</span><span class="n">addFile</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;header&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">SparkFiles</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;test_converted_df.csv&quot;</span><span class="p">),</span> <span class="n">inferSchema</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">timestampFormat</span><span class="o">=</span><span class="s2">&quot;mm/dd/yy&quot;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;header&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">SparkFiles</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;all_dumimies_converted_df.csv&quot;</span><span class="p">),</span> <span class="n">inferSchema</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">timestampFormat</span><span class="o">=</span><span class="s2">&quot;mm/dd/yy&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 
 <span class="c1">#Convert to Pandas to allow train_test_split usage</span>
@@ -14380,40 +14335,24 @@ Reading package lists... Done
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Get the Feature names</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
+<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
 
-<div class="jp-OutputArea jp-Cell-outputArea">
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">features</span><span class="p">))</span>
+</pre></div>
 
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>+----+----------+-----------+-------+-----------+-----------+---------+------------+----------+---------+---------+--------+--------+------------+------------+----------+------------+----------+---------+-----------+---------+------------+---------+------------+------------+--------+--------+------------+------------+-----------+------------+----------+----------+-----------+-----------+------------+----------+----------+----------+----------+----------+-----------+-------------+-----------+--------+------+-----+-------+------+------+-----------+-----------+-----------+-----------+----------+------------+------------+------------+---------------+---------------+---------------+-----------------+-------------+-------------+----------------+-------------+-------------+--------------------+-------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+-------------------+--------------------+--------------------+------------------+--------------------+-------------------+--------------------+--------------------+--------------------+------------------+-------------------+--------------------+--------------------+--------------------+-------------------+--------------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+---------------+--------------+---------------+-----------------+-----------------+-----------------+-----------------+-----------------+---------------+---------------+-----------------+-------------+-----------------+--------------+----------------+----------------+----------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-----------------+------------------+-------------------+-------------------+-------------------+------------------+---------------+----------------+-----------------+----------------+---------------+----------------+---------------+------------+------------+------------+------------+----------------+----------------+----------------+-----------------+------------------+------------------+------------------+-----------------+------------+------------+----------------+----------------+------------+------------+--------------+--------------+--------------+------------+------------+-----------+---------------------+--------------------+--------------------+--------------------+---------------------+----------+-----------+----------+
-|  Id|MSSubClass|LotFrontage|LotArea|OverallQual|OverallCond|YearBuilt|YearRemodAdd|MasVnrArea|ExterQual|ExterCond|BsmtQual|BsmtCond|BsmtExposure|BsmtFinType1|BsmtFinSF1|BsmtFinType2|BsmtFinSF2|BsmtUnfSF|TotalBsmtSF|HeatingQC|LowQualFinSF|GrLivArea|BsmtFullBath|BsmtHalfBath|FullBath|HalfBath|BedroomAbvGr|KitchenAbvGr|KitchenQual|TotRmsAbvGrd|Functional|Fireplaces|FireplaceQu|GarageYrBlt|GarageFinish|GarageCars|GarageArea|GarageQual|GarageCond|WoodDeckSF|OpenPorchSF|EnclosedPorch|ScreenPorch|PoolArea|PoolQC|Fence|MiscVal|MoSold|YrSold|MSZoning_RH|MSZoning_RL|MSZoning_RM|Street_Pave|Alley_Pave|LotShape_IR2|LotShape_IR3|LotShape_Reg|LandContour_HLS|LandContour_Low|LandContour_Lvl|LotConfig_CulDSac|LotConfig_FR2|LotConfig_FR3|LotConfig_Inside|LandSlope_Mod|LandSlope_Sev|Neighborhood_Blueste|Neighborhood_BrDale|Neighborhood_BrkSide|Neighborhood_ClearCr|Neighborhood_CollgCr|Neighborhood_Crawfor|Neighborhood_Edwards|Neighborhood_Gilbert|Neighborhood_IDOTRR|Neighborhood_MeadowV|Neighborhood_Mitchel|Neighborhood_NAmes|Neighborhood_NPkVill|Neighborhood_NWAmes|Neighborhood_NoRidge|Neighborhood_NridgHt|Neighborhood_OldTown|Neighborhood_SWISU|Neighborhood_Sawyer|Neighborhood_SawyerW|Neighborhood_Somerst|Neighborhood_StoneBr|Neighborhood_Timber|Neighborhood_Veenker|Condition1_Feedr|Condition1_Norm|Condition1_PosA|Condition1_PosN|Condition1_RRAe|Condition1_RRAn|Condition1_RRNe|Condition1_RRNn|Condition2_Feedr|Condition2_Norm|Condition2_PosA|Condition2_PosN|BldgType_2fmCon|BldgType_Duplex|BldgType_Twnhs|BldgType_TwnhsE|HouseStyle_1.5Unf|HouseStyle_1Story|HouseStyle_2.5Unf|HouseStyle_2Story|HouseStyle_SFoyer|HouseStyle_SLvl|RoofStyle_Gable|RoofStyle_Gambrel|RoofStyle_Hip|RoofStyle_Mansard|RoofStyle_Shed|RoofMatl_Tar&amp;Grv|RoofMatl_WdShake|RoofMatl_WdShngl|Exterior1st_AsphShn|Exterior1st_BrkComm|Exterior1st_BrkFace|Exterior1st_CemntBd|Exterior1st_HdBoard|Exterior1st_MetalSd|Exterior1st_Plywood|Exterior1st_Stucco|Exterior1st_VinylSd|Exterior1st_Wd Sdng|Exterior1st_WdShing|Exterior2nd_AsphShn|Exterior2nd_Brk Cmn|Exterior2nd_BrkFace|Exterior2nd_CBlock|Exterior2nd_CmentBd|Exterior2nd_HdBoard|Exterior2nd_ImStucc|Exterior2nd_MetalSd|Exterior2nd_Plywood|Exterior2nd_Stone|Exterior2nd_Stucco|Exterior2nd_VinylSd|Exterior2nd_Wd Sdng|Exterior2nd_Wd Shng|MasVnrType_BrkFace|MasVnrType_None|MasVnrType_Stone|Foundation_CBlock|Foundation_PConc|Foundation_Slab|Foundation_Stone|Foundation_Wood|Heating_GasW|Heating_Grav|Heating_Wall|CentralAir_Y|Electrical_FuseF|Electrical_FuseP|Electrical_SBrkr|GarageType_Attchd|GarageType_Basment|GarageType_BuiltIn|GarageType_CarPort|GarageType_Detchd|PavedDrive_P|PavedDrive_Y|MiscFeature_Othr|MiscFeature_Shed|SaleType_CWD|SaleType_Con|SaleType_ConLD|SaleType_ConLI|SaleType_ConLw|SaleType_New|SaleType_Oth|SaleType_WD|SaleCondition_AdjLand|SaleCondition_Alloca|SaleCondition_Family|SaleCondition_Normal|SaleCondition_Partial|firstflrsf|secondflrsf|thirdPorch|
-+----+----------+-----------+-------+-----------+-----------+---------+------------+----------+---------+---------+--------+--------+------------+------------+----------+------------+----------+---------+-----------+---------+------------+---------+------------+------------+--------+--------+------------+------------+-----------+------------+----------+----------+-----------+-----------+------------+----------+----------+----------+----------+----------+-----------+-------------+-----------+--------+------+-----+-------+------+------+-----------+-----------+-----------+-----------+----------+------------+------------+------------+---------------+---------------+---------------+-----------------+-------------+-------------+----------------+-------------+-------------+--------------------+-------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+-------------------+--------------------+--------------------+------------------+--------------------+-------------------+--------------------+--------------------+--------------------+------------------+-------------------+--------------------+--------------------+--------------------+-------------------+--------------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+---------------+--------------+---------------+-----------------+-----------------+-----------------+-----------------+-----------------+---------------+---------------+-----------------+-------------+-----------------+--------------+----------------+----------------+----------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-----------------+------------------+-------------------+-------------------+-------------------+------------------+---------------+----------------+-----------------+----------------+---------------+----------------+---------------+------------+------------+------------+------------+----------------+----------------+----------------+-----------------+------------------+------------------+------------------+-----------------+------------+------------+----------------+----------------+------------+------------+--------------+--------------+--------------+------------+------------+-----------+---------------------+--------------------+--------------------+--------------------+---------------------+----------+-----------+----------+
-|1461|        20|       80.0|  11622|          5|          6|     1961|        1961|       0.0|        3|        3|       3|       3|           1|           3|     468.0|           2|     144.0|    270.0|      882.0|        3|           0|      896|         0.0|         0.0|       1|       0|           2|           1|          3|           5|         8|         0|          0|     1961.0|           1|       1.0|     730.0|         3|         3|       140|          0|            0|        120|       0|     0|    3|      0|     6|  2010|          1|          0|          0|          1|         0|           0|           0|           1|              0|              0|              1|                0|            0|            0|               1|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   0|                  0|                   0|                   0|                 1|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               1|              0|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                1|                0|                0|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  1|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                0|                 0|                  1|                  0|                  0|                 0|              1|               0|                1|               0|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|       896|          0|         0|
-|1462|        20|       81.0|  14267|          6|          6|     1958|        1958|     108.0|        3|        3|       3|       3|           1|           5|     923.0|           1|       0.0|    406.0|     1329.0|        3|           0|     1329|         0.0|         0.0|       1|       1|           3|           1|          4|           6|         8|         0|          0|     1958.0|           1|       1.0|     312.0|         3|         3|       393|         36|            0|          0|       0|     0|    0|  12500|     6|  2010|          0|          1|          0|          1|         0|           0|           0|           0|              0|              0|              1|                0|            0|            0|               0|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   0|                  0|                   0|                   0|                 1|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                1|                0|                0|                0|              0|              0|                0|            1|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  1|                  0|                  0|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                0|                 0|                  0|                  1|                  0|                 1|              0|               0|                1|               0|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|      1329|          0|         0|
-|1463|        60|       74.0|  13830|          5|          5|     1997|        1998|       0.0|        3|        3|       4|       3|           1|           6|     791.0|           1|       0.0|    137.0|      928.0|        4|           0|     1629|         0.0|         0.0|       2|       1|           3|           1|          3|           6|         8|         1|          3|     1997.0|           3|       2.0|     482.0|         3|         3|       212|         34|            0|          0|       0|     0|    3|      0|     3|  2010|          0|          1|          0|          1|         0|           0|           0|           0|              0|              0|              1|                0|            0|            0|               1|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   1|                  0|                   0|                   0|                 0|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                0|                0|                1|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  1|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                0|                 0|                  1|                  0|                  0|                 0|              1|               0|                0|               1|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|       928|        701|         0|
-|1464|        60|       78.0|   9978|          6|          6|     1998|        1998|      20.0|        3|        3|       3|       3|           1|           6|     602.0|           1|       0.0|    324.0|      926.0|        5|           0|     1604|         0.0|         0.0|       2|       1|           3|           1|          4|           7|         8|         1|          4|     1998.0|           3|       2.0|     470.0|         3|         3|       360|         36|            0|          0|       0|     0|    0|      0|     6|  2010|          0|          1|          0|          1|         0|           0|           0|           0|              0|              0|              1|                0|            0|            0|               1|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   1|                  0|                   0|                   0|                 0|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                0|                0|                1|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  1|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                0|                 0|                  1|                  0|                  0|                 1|              0|               0|                0|               1|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|       926|        678|         0|
-|1465|       120|       43.0|   5005|          8|          5|     1992|        1992|       0.0|        4|        3|       4|       3|           1|           5|     263.0|           1|       0.0|   1017.0|     1280.0|        5|           0|     1280|         0.0|         0.0|       2|       0|           2|           1|          4|           5|         8|         0|          0|     1992.0|           2|       2.0|     506.0|         3|         3|         0|         82|            0|        144|       0|     0|    0|      0|     1|  2010|          0|          1|          0|          1|         0|           0|           0|           0|              1|              0|              0|                0|            0|            0|               1|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   0|                  0|                   0|                   0|                 0|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   1|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              1|                0|                1|                0|                0|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  1|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  1|                  0|                  0|                  0|                0|                 0|                  0|                  0|                  0|                 0|              1|               0|                0|               1|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|      1280|          0|         0|
-|1466|        60|       75.0|  10000|          6|          5|     1993|        1994|       0.0|        3|        3|       4|       3|           1|           1|       0.0|           1|       0.0|    763.0|      763.0|        4|           0|     1655|         0.0|         0.0|       2|       1|           3|           1|          3|           7|         8|         1|          3|     1993.0|           3|       2.0|     440.0|         3|         3|       157|         84|            0|          0|       0|     0|    0|      0|     4|  2010|          0|          1|          0|          1|         0|           0|           0|           0|              0|              0|              1|                0|            0|            0|               0|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   1|                  0|                   0|                   0|                 0|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                0|                0|                1|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  1|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  1|                  0|                  0|                  0|                0|                 0|                  0|                  0|                  0|                 0|              1|               0|                0|               1|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|       763|        892|         0|
-|1467|        20|        0.0|   7980|          6|          7|     1992|        2007|       0.0|        3|        4|       4|       3|           1|           5|     935.0|           1|       0.0|    233.0|     1168.0|        5|           0|     1187|         1.0|         0.0|       2|       0|           3|           1|          3|           6|         8|         0|          0|     1992.0|           3|       2.0|     420.0|         3|         3|       483|         21|            0|          0|       0|     0|    4|    500|     3|  2010|          0|          1|          0|          1|         0|           0|           0|           0|              0|              0|              1|                0|            0|            0|               1|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   1|                  0|                   0|                   0|                 0|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                1|                0|                0|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  1|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  1|                  0|                  0|                  0|                0|                 0|                  0|                  0|                  0|                 0|              1|               0|                0|               1|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               1|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|      1187|          0|         0|
-|1468|        60|       63.0|   8402|          6|          5|     1998|        1998|       0.0|        3|        3|       4|       3|           1|           1|       0.0|           1|       0.0|    789.0|      789.0|        4|           0|     1465|         0.0|         0.0|       2|       1|           3|           1|          3|           7|         8|         1|          4|     1998.0|           3|       2.0|     393.0|         3|         3|         0|         75|            0|          0|       0|     0|    0|      0|     5|  2010|          0|          1|          0|          1|         0|           0|           0|           0|              0|              0|              1|                0|            0|            0|               1|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   1|                  0|                   0|                   0|                 0|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                0|                0|                1|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  1|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                0|                 0|                  1|                  0|                  0|                 0|              1|               0|                0|               1|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|       789|        676|         0|
-|1469|        20|       85.0|  10176|          7|          5|     1990|        1990|       0.0|        3|        3|       4|       3|           4|           6|     637.0|           1|       0.0|    663.0|     1300.0|        4|           0|     1341|         1.0|         0.0|       1|       1|           2|           1|          4|           5|         8|         1|          1|     1990.0|           1|       2.0|     506.0|         3|         3|       192|          0|            0|          0|       0|     0|    0|      0|     2|  2010|          0|          1|          0|          1|         0|           0|           0|           1|              0|              0|              1|                0|            0|            0|               1|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   1|                  0|                   0|                   0|                 0|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                1|                0|                0|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  1|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  1|                  0|                  0|                  0|                0|                 0|                  0|                  0|                  0|                 0|              1|               0|                0|               1|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|      1341|          0|         0|
-|1470|        20|       70.0|   8400|          4|          5|     1970|        1970|       0.0|        3|        3|       3|       3|           1|           5|     804.0|           3|      78.0|      0.0|      882.0|        3|           0|      882|         1.0|         0.0|       1|       0|           2|           1|          3|           4|         8|         0|          0|     1970.0|           3|       2.0|     525.0|         3|         3|       240|          0|            0|          0|       0|     0|    3|      0|     4|  2010|          0|          1|          0|          1|         0|           0|           0|           1|              0|              0|              1|                0|            0|            0|               0|            0|            0|                   0|                  0|                   0|                   0|                   0|                   0|                   0|                   0|                  0|                   0|                   0|                 1|                   0|                  0|                   0|                   0|                   0|                 0|                  0|                   0|                   0|                   0|                  0|                   0|               0|              1|              0|              0|              0|              0|              0|              0|               0|              1|              0|              0|              0|              0|             0|              0|                0|                1|                0|                0|                0|              0|              1|                0|            0|                0|             0|               0|               0|               0|                  0|                  0|                  0|                  0|                  0|                  0|                  1|                 0|                  0|                  0|                  0|                  0|                  0|                  0|                 0|                  0|                  0|                  0|                  0|                  1|                0|                 0|                  0|                  0|                  0|                 0|              1|               0|                1|               0|              0|               0|              0|           0|           0|           0|           1|               0|               0|               1|                1|                 0|                 0|                 0|                0|           0|           1|               0|               0|           0|           0|             0|             0|             0|           0|           0|          1|                    0|                   0|                   0|                   1|                    0|       882|          0|         0|
-+----+----------+-----------+-------+-----------+-----------+---------+------------+----------+---------+---------+--------+--------+------------+------------+----------+------------+----------+---------+-----------+---------+------------+---------+------------+------------+--------+--------+------------+------------+-----------+------------+----------+----------+-----------+-----------+------------+----------+----------+----------+----------+----------+-----------+-------------+-----------+--------+------+-----+-------+------+------+-----------+-----------+-----------+-----------+----------+------------+------------+------------+---------------+---------------+---------------+-----------------+-------------+-------------+----------------+-------------+-------------+--------------------+-------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+-------------------+--------------------+--------------------+------------------+--------------------+-------------------+--------------------+--------------------+--------------------+------------------+-------------------+--------------------+--------------------+--------------------+-------------------+--------------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+---------------+--------------+---------------+-----------------+-----------------+-----------------+-----------------+-----------------+---------------+---------------+-----------------+-------------+-----------------+--------------+----------------+----------------+----------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-----------------+------------------+-------------------+-------------------+-------------------+------------------+---------------+----------------+-----------------+----------------+---------------+----------------+---------------+------------+------------+------------+------------+----------------+----------------+----------------+-----------------+------------------+------------------+------------------+-----------------+------------+------------+----------------+----------------+------------+------------+--------------+--------------+--------------+------------+------------+-----------+---------------------+--------------------+--------------------+--------------------+---------------------+----------+-----------+----------+
-only showing top 10 rows
-
-</pre>
+     </div>
 </div>
 </div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14422,221 +14361,13 @@ only showing top 10 rows
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import RandomForestRegressor and Pickle</span>
-
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
-<span class="kn">import</span> <span class="nn">pickle</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Import sklearn tools and dependencies</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Load model</span>
-<span class="c1">#NOTE: Must manually load file before un-pickling</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;VLC_Ames_Housing_Price_Model&quot;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_predict</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;firstflrsf&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;GrLivArea&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;LotArea&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;GarageArea&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;BsmtUnfSF&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;TotalBsmtSF&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;LotFrontage&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;GarageYrBlt&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;MoSold&quot;</span><span class="p">,</span> 
-                <span class="s2">&quot;YearBuilt&quot;</span><span class="p">]]</span>
-
-<span class="n">y_predict</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_predict</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">y_predict</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[132189.99 161919.5  185122.   ... 153574.18 113218.   232581.23]
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">prices</span> <span class="o">=</span> <span class="n">y_predict</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Predicted Price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">prices</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Id&#39;</span><span class="p">,</span> <span class="s1">&#39;Predicted Price&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Id</th>
-      <th>Predicted Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1461</td>
-      <td>132189.99</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1462</td>
-      <td>161919.50</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1463</td>
-      <td>185122.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1464</td>
-      <td>183821.35</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1465</td>
-      <td>183582.25</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1466</td>
-      <td>176982.80</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1467</td>
-      <td>170648.35</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>1468</td>
-      <td>174674.40</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>1469</td>
-      <td>179928.75</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>1470</td>
-      <td>129680.49</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14645,7 +14376,112 @@ only showing top 10 rows
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Assign the data to X and y</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;1stFlrSF&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;GrLivArea&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;LotArea&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;GarageArea&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;BsmtUnfSF&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;TotalBsmtSF&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;LotFrontage&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;GarageYrBlt&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;MoSold&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;YearBuilt&quot;</span><span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;SalePrice&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create the model using RandomForestRegressor</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Finalize the model by fitting to the entire training dataset and calculate the scores for the training data</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1">### END SOLUTION </span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Score: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load in predict.csv from S3 into a DataFrame</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://finalprojectbootcamp.s3.us-east-2.amazonaws.com/{NEW CSV}}&quot;</span>
+<span class="n">spark</span><span class="o">.</span><span class="n">sparkContext</span><span class="o">.</span><span class="n">addFile</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="n">dfp</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;header&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">SparkFiles</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;{NEW CSV}&quot;</span><span class="p">),</span> <span class="n">inferSchema</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">timestampFormat</span><span class="o">=</span><span class="s2">&quot;mm/dd/yy&quot;</span><span class="p">)</span>
+<span class="n">dfp</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1">#Convert to Pandas to allow train_test_split usage</span>
+<span class="n">dfp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+<span class="n">dfp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s2">&quot;any&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_predict</span> <span class="o">=</span> <span class="n">dfp</span><span class="p">[[</span><span class="s2">&quot;1stFlrSF&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;GrLivArea&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;LotArea&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;GarageArea&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;BsmtUnfSF&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;TotalBsmtSF&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;LotFrontage&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;GarageYrBlt&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;MoSold&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;YearBuilt&quot;</span><span class="p">]]</span>
+
+<span class="n">y_predict</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_predict</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">X_predict</span><span class="p">:</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Predicted=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">y_predict</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 </pre></div>
 
      </div>
