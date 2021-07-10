@@ -18,3 +18,5 @@ A Random Forest Regression analysis was used to perform the price prediction mod
 A web application was created so that users can input house information and run the data through the model to predict a house price. The application requires the same data inputs from the feature importance varriables. The application was deployed using heroku.
 
 This project was derived from a Kaggle competition: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
+
+

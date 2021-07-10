@@ -11,3 +11,14 @@ h1{
 
 }
 
+.label_color{
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+.tableaumargins{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
